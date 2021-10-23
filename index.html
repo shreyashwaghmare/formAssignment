@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+<title>Survey form for OLA</title>
+<style>
+    body{
+        background-color: darkolivegreen;
+        font-family: serif;
+        text-align: center;
+    }
+    form{
+        background-color: forestgreen;
+        margin: 50px;
+        max-width: 500px;
+        padding: 30px 20px;
+        box-shadow: 10px 10px 25px 25px;
+    }
+    .Ola-role{
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .Ola-role label{
+        display : block;
+        margin-bottom: 10px;
+
+    }
+    .Ola-role input,
+    .Ola-role select{
+        border: 2px;
+        border-radius: 2px;
+        font-family: inherit;
+        display:block;
+        width:95%;
+
+    }
+    button {
+            background-color: #05c46b;
+            border: 5px solid #777;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+
+
+</style>
+</head>
+ 
+<body>
+    <form>
+      <div class ="Ola-role">
+          <label for="nameip" id="name-label">
+              Name
+          </label>
+          <input type = "text" id="nameip" placeholder="Enter your Name"><br><br>
+          <label for="emailip" id="email-label">
+            EmailID
+        </label>
+        <input type = "email" id="emailip" placeholder="Enter your EmailID"><br><br>
+        <label for="phoneip" id="phone-label">
+            Mobile Number
+        </label>
+        <input type = "tel" id="phoneip" placeholder="Enter your Contact number"><br><br>
+      </div>
+      <div class="Ola-role">
+          <label>How easily are Cabs available?</label>
+          <select>
+              <option value="very easy">Very Easy</option>
+              <option value="easy">Easy</option>
+              <option value="difficult">Difficult</option>
+          </select> <br><br>
+          <label>How will you rate the riding experience?</label>
+          <select>
+              <option value="Fabulous">Fabulous</option>
+              <option value="Awesome">Awesome</option>
+              <option value="Okay">Okay</option>
+          </select>
+         
+
+      </div>
+      <div class="Ola-role">
+          <label>Was driver acting responsibly?<br>
+              <input type="radio" >Yes</input><br>
+              <input type="radio" >No</input><br>
+
+          </label>
+          <label>Was ride started on time?<br>
+            <input type="radio" >Yes</input><br>
+            <input type="radio" >No</input>
+
+        </label>
+
+      </div>
+      <button type="submit" value="submit">
+        Submit
+    </button>
+    </form>  
+
+
+</body>
